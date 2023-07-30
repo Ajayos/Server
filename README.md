@@ -37,9 +37,9 @@ app.get("/hey", async (req, res) => {
 - Formatting memory usage in a human-readable format.
 - Handling server startup and graceful shutdown.
 
-## Examples
+## Example
 
-Additional examples of how to use the package can be found in the [examples](./examples.js) file.
+Additional example of how to use the package can be found in the [example](./example.js) file.
 
 ## Configuration
 
@@ -59,7 +59,7 @@ Remember to place the `.env` file in the root directory of your project alongsid
 const app = express();
 ``
 
-use with 
+use with
 ```
 app.app
 ```
