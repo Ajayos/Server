@@ -43,15 +43,20 @@ Additional example of how to use the package can be found in the [example](./exa
 
 ## Configuration
 
+
 The server can be configured by setting the following environment variables in a `.env` file:
 
 - `PORT`: The port on which the server will listen. If not specified, the server will default to port 3000.
+- `NODE_ENV`: Set this variable to "production" for running the server in production mode. By default, the server runs in development mode.
 
+- When running the server in development mode, CORS will be enabled to allow requests from different origins during development. In production mode, `CORS`` will be disabled to enforce stricter security.
 Example .env file:
 
 ```
 PORT=5000
+NODE_ENV=production
 ```
+
 
 Remember to place the `.env` file in the root directory of your project alongside the server code.
 
