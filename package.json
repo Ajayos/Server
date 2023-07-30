@@ -1,7 +1,7 @@
 {
   "name": "@ajayos/server",
-  "version": "1.0.1",
-  "description": "hi",
+  "version": "1.0.2",
+  "description": "A powerful and flexible HTTP server package built on top of Express, providing various server functionalities and utilities.",
   "main": "index.js",
   "scripts": {
     "test": "node example.js"
