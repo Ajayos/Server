@@ -85,6 +85,11 @@ use with
 app.app
 ```
 
+## Documentation
+
+View documentation on [API](./API.md)
+
+
 ## License
 
 This package is open-source and available under the [Apache-2.0 License](./LICENSE). Feel free to use, modify, and distribute it as you see fit.
