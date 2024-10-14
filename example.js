@@ -3,7 +3,7 @@ const { SERVER } = require('@ajayos/server');
 const app = new SERVER({
 	port: 3002,
 	onServerStart: () => {
-		console.log('Server is running on port 3002');
+		app.log('Server is running on port 3002');
 	},
 });
 

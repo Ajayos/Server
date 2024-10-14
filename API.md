@@ -254,7 +254,7 @@ You can override the `onServerStart` event to execute code when the server start
 const app = new SERVER({
 	port: 3002,
 	onServerStart: () => {
-		console.log('Server started successfully on port 3002');
+		app.log('Server started successfully on port 3002');
 	},
 });
 ```

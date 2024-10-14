@@ -50,7 +50,7 @@ const app = new SERVER({
 
 // Middleware to log requests
 app.use((req, res, next) => {
-	console.log(`${req.method} request for '${req.url}'`);
+	app.log(`${req.method} request for '${req.url}'`);
 	next(); // Call the next middleware or route handler
 });
 
@@ -62,8 +62,8 @@ app.get('/', async (req, res) => {
 // Start the server with error handling
 app
 	.start()
-	.then(() => console.log(`Server running on port ${app.port}`))
-	.catch(err => console.error('Failed to start server:', err));
+	.then(() => app.log(`Server running on port ${app.port}`))
+	.catch(err => app.log('Failed to start server: ' +  err, 'error'));
 ```
 
 ## Features
