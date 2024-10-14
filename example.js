@@ -1,11 +1,23 @@
-const App = require("./index.js");
+const { SERVER } = require('@ajayos/server');
 
-const app = new App();
-
-app.get("/", async (req, res) => {
-	res.send("Hello World")
+const app = new SERVER({
+	port: 3002,
+	onServerStart: () => {
+		console.log('Server is running on port 3002');
+	},
 });
 
-app.get("/hey", async (req, res) => {
-	res.json({data: "hello world"})
+app.get('/', async (req, res) => {
+	res.send('Hello World');
 });
+
+app.get('/hey', async (req, res) => {
+	res.json({ data: 'hello world' });
+});
+
+app.get('/ip', async (req, res) => {
+	const data = app.getActiveNetworkInterfaces();
+	res.json({ data });
+});
+
+app.start();

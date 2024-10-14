@@ -1,37 +1,43 @@
 {
-  "name": "@ajayos/server",
-  "version": "1.0.2",
-  "description": "A powerful and flexible HTTP server package built on top of Express, providing various server functionalities and utilities.",
-  "main": "index.js",
-  "scripts": {
-    "test": "node example.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ajayos/Server.git"
-  },
-  "keywords": [
-    "Ajayos",
-    "ajay",
-    "server",
-    "express",
-    "nodejs",
-    "http"
-  ],
-  "author": "Ajay o s",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/Ajayos/Server/issues"
-  },
-  "homepage": "https://github.com/Ajayos/Server#readme",
-  "dependencies": {
-    "@ajayos/nodelog": "^1.0.2",
-    "axios": "^1.4.0",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "http": "^0.0.1-security",
-    "os": "^0.1.2"
-  }
+	"name": "@ajayos/server",
+	"version": "2.0.0",
+	"description": "A powerful and flexible HTTP server package built on top of Express, providing various server functionalities and utilities.",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "node example.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ajayos/Server.git"
+	},
+	"keywords": [
+		"Ajayos",
+		"ajay",
+		"server",
+		"express",
+		"nodejs",
+		"http"
+	],
+	"author": "Ajay o s",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/Ajayos/Server/issues"
+	},
+	"homepage": "https://github.com/Ajayos/Server#readme",
+	"dependencies": {
+		"@ajayos/nodelog": "^1.0.2",
+		"axios": "^1.4.0",
+		"body-parser": "^1.20.2",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"http": "^0.0.1-security",
+		"os": "^0.1.2"
+	}
 }
